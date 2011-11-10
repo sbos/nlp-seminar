@@ -58,8 +58,8 @@ while True:
             if not filename:
                 #m.store(emailid, '+FLAGS', '\Unseen')  
                 filename = 'noname.zip'
-                print 'the mail does contain bad submission, skipping'  
-                break
+                print 'the mail does contain bad submission, renaming'  
+                #break
     
             att_path = os.path.join(detach_dir, filename)
     
