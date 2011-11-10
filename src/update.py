@@ -15,7 +15,7 @@ m.login(login, password)
 
 print 'logging in smtp'
 server = smtplib.SMTP('smtp.gmail.com')
-server.set_debuglevel(1)
+#server.set_debuglevel(1)
 server.ehlo()
 server.starttls()
 server.ehlo()
