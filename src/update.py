@@ -57,9 +57,10 @@ while True:
             # if there is no filename, we create one with a counter to avoid duplicates
             if not filename:
                 #m.store(emailid, '+FLAGS', '\Unseen')  
-                filename = 'noname.zip'
-                print 'the mail does contain bad submission, renaming'  
+                #filename = 'noname.zip'
+                print 'the mail does contain bad submission, skipping'  
                 #break
+                continue
     
             att_path = os.path.join(detach_dir, filename)
     
